@@ -16,6 +16,7 @@ const routes = [
     path: '/event',
     name: 'Event-show',
     component: EventShow,
+    props: true,
   },
   {
     path: '/event/create',
