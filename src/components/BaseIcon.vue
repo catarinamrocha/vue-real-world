@@ -1,12 +1,12 @@
 <template>
-  <div class="icon-wrapper" v-html="svg">
+  <div>
+    <span class="icon-wrapper" v-html="svg"></span>
     <slot></slot>
   </div>
 </template>
 
 <script>
 import feather from 'feather-icons';
-
 export default {
   props: {
     name: String,
@@ -21,7 +21,7 @@ export default {
   },
   computed: {
     svg() {
-      return feather.icons[this.name].toSvg({
+      return feather.icons['users'].toSvg({
         class: 'icon',
         width: this.width,
         height: this.height,
